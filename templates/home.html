@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Wrapology - Custom Signs, Prints & Vehicle Wraps{% endblock %}
+
+{% block content %}
+<section class="hero" style="background-image: url('{{ url_for('static', filename='images/Transform background.jpg') }}');">
+    <div class="hero-content">
+        <h1>Transform Your Brand</h1>
+        <p>Custom Signs, Prints & Vehicle Wraps</p>
+        <p class="hero-subtitle">From one-off jobs to full business branding solutions</p>
+        <div class="hero-buttons">
+            <a href="/quote" class="button button-primary">Get a Quote</a>
+            <a href="/work" class="button button-secondary">View Our Work</a>
+        </div>
+    </div>
+</section>
+
+<section class="services-section">
+    <div class="container">
+        <h2>What We Do</h2>
+        <div class="service-tiles">
+            <div class="service-tile">
+                <div class="service-icon">📊</div>
+                <h3>Signs & Displays</h3>
+                <p>Eye-catching signage for retail, events, and exhibitions</p>
+            </div>
+            <div class="service-tile">
+                <div class="service-icon">🚗</div>
+                <h3>Vehicle Graphics</h3>
+                <p>Professional vehicle wraps and graphics that get you noticed</p>
+            </div>
+            <div class="service-tile">
+                <div class="service-icon">🖨️</div>
+                <h3>Print Products</h3>
+                <p>High-quality printing for banners, posters, and marketing materials</p>
+            </div>
+            <div class="service-tile">
+                <div class="service-icon">👁️</div>
+                <h3>Window & Wall Graphics</h3>
+                <p>Transform spaces with stunning window and wall designs</p>
+            </div>
+            <div class="service-tile">
+                <div class="service-icon">⚙️</div>
+                <h3>Custom Fabrication</h3>
+                <p>CNC cutting and custom manufacturing for unique projects</p>
+            </div>
+            <div class="service-tile">
+                <div class="service-icon">🎨</div>
+                <h3>Design Services</h3>
+                <p>Full design support from concept to completion</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="featured-work">
+    <div class="container">
+        <h2>Featured Work</h2>
+        <p>Check out some of our recent projects and see the quality we deliver</p>
+        <div class="work-gallery">
+            <div class="work-item">
+                <img src="{{ url_for('static', filename='images/retail signage a.jpeg') }}" alt="Retail Signage" class="work-image">
+                <h4>Retail Signage</h4>
+            </div>
+            <div class="work-item">
+                <img src="{{ url_for('static', filename='images/vehicle graphics a.jpg') }}" alt="Vehicle Graphics" class="work-image">
+                <h4>Vehicle Graphics</h4>
+            </div>
+            <div class="work-item">
+                <img src="{{ url_for('static', filename='images/window graphics a.jpg') }}" alt="Window Graphics" class="work-image">
+                <h4>Window Graphics</h4>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="/work" class="button button-primary">See More Work</a>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Need Something Custom?</h2>
+        <p>Get in touch with us today for a personalized quote</p>
+        <a href="/quote" class="button button-primary">Get a Custom Quote</a>
+    </div>
+</section>
+{% endblock %}

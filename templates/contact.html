@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - Wrapology{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Get in touch with our team - we're here to help</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <p>Wrapology5@gmail.com</p>
+                <a href="mailto:Wrapology5@gmail.com" class="contact-link">Send an Email</a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Phone</h3>
+                <p>07596460121</p>
+                <a href="tel:07596460121" class="contact-link">Call Us</a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Address</h3>
+                <p>54 Main Street<br>Killylea<br>Armagh<br>BT60 4LS</p>
+                <a href="https://maps.google.com/?q=54+Main+Street+Killylea+Armagh+BT60+4LS" target="_blank" class="contact-link">Get Directions</a>
+            </div>
+        </div>
+        
+        <div class="opening-hours">
+            <h3>Opening Hours</h3>
+            <div class="hours-grid">
+                <div><strong>Monday - Friday:</strong></div>
+                <div>9:00 AM - 6:00 PM</div>
+                <div><strong>Saturday:</strong></div>
+                <div>10:00 AM - 4:00 PM</div>
+                <div><strong>Sunday:</strong></div>
+                <div>Closed</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Request a custom quote and let's bring your vision to life</p>
+        <a href="/quote" class="button button-primary">Get a Quote</a>
+    </div>
+</section>
+{% endblock %}

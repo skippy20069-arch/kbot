@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}Shop - Wrapology{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Shop</h1>
+        <p>Browse our ready-made products and order online</p>
+    </div>
+</section>
+
+<section class="products-section">
+    <div class="container">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/poster print a.jpg') }}" alt="Banners & Posters" class="product-image-photo">
+                <h3>Banners & Posters</h3>
+                <p>High-quality vinyl banners and printed posters in various sizes</p>
+                <div class="product-price">From £29.99</div>
+                <a href="/quote" class="button button-small">Order Now</a>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/m and ps chippy sign.jpg') }}" alt="Boards & Signs" class="product-image-photo">
+                <h3>Boards & Signs</h3>
+                <p>Correx boards, foam boards, and A-frame signs for any occasion</p>
+                <div class="product-price">From £19.99</div>
+                <a href="/quote" class="button button-small">Order Now</a>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/katie simpson sticker.jpg') }}" alt="Stickers & Vinyl" class="product-image-photo">
+                <h3>Stickers & Vinyl</h3>
+                <p>Custom stickers, vinyl decals, and labels for business or personal use</p>
+                <div class="product-price">From £9.99</div>
+                <a href="/quote" class="button button-small">Order Now</a>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/acorn frosting.jpg') }}" alt="Window Graphics" class="product-image-photo">
+                <h3>Window Graphics</h3>
+                <p>Frosted window films, promotional graphics, and privacy solutions</p>
+                <div class="product-price">From £49.99</div>
+                <a href="/quote" class="button button-small">Order Now</a>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/kyle business cards.jpg') }}" alt="Business Cards" class="product-image-photo">
+                <h3>Business Cards</h3>
+                <p>Professional business cards printed on premium card stock</p>
+                <div class="product-price">From £24.99</div>
+                <a href="/quote" class="button button-small">Order Now</a>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/pop up banner a.jpg') }}" alt="Event Displays" class="product-image-photo">
+                <h3>Event Displays</h3>
+                <p>Pop-up banners, roller banners, and exhibition displays</p>
+                <div class="product-price">From £89.99</div>
+                <a href="/quote" class="button button-small">Order Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="custom-section">
+    <div class="container">
+        <h2>Need Something Different?</h2>
+        <p>Can't find what you're looking for? We offer fully custom solutions tailored to your needs.</p>
+        <a href="/quote" class="button button-primary">Request a Custom Quote</a>
+    </div>
+</section>
+{% endblock %}

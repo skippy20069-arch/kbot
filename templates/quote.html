@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Get a Quote - Wrapology{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Get a Custom Quote</h1>
+        <p>Tell us about your project and we'll get back to you with a personalized quote</p>
+    </div>
+</section>
+
+<section class="form-section">
+    <div class="container">
+        <div class="form-container">
+            <form method="post" class="quote-form">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" placeholder="John Smith" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="details">Project Details *</label>
+                    <textarea id="details" name="details" rows="6" placeholder="Tell us about your project... What type of product or service are you interested in? What are your requirements?" required></textarea>
+                </div>
+                
+                <button type="submit" class="button button-primary button-full">Send Enquiry</button>
+            </form>
+            
+            <div class="form-info">
+                <h3>What Happens Next?</h3>
+                <ul>
+                    <li>✅ We'll review your requirements</li>
+                    <li>✅ Our team will prepare a detailed quote</li>
+                    <li>✅ You'll receive a response within 24 hours</li>
+                    <li>✅ We'll work with you to refine the details</li>
+                </ul>
+                
+                <div class="contact-box">
+                    <h4>Prefer to Talk?</h4>
+                    <p><strong>Phone:</strong> 07596460121</p>
+                    <p><strong>Email:</strong> Wrapology5@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
